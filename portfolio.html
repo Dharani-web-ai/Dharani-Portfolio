@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharani D - Portfolio</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+    body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #000; color: #fff; line-height: 1.6;}
+    
+    /* Navbar */
+    nav {background: #111; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; position: sticky; top: 0; z-index: 100;}
+    nav h1 {font-size: 1.5em; color: #00BFFF; text-shadow: 0 0 10px #00BFFF;}
+    nav ul {list-style: none; display: flex;}
+    nav ul li {margin: 0 15px;}
+    nav ul li a {color: #fff; text-decoration: none; font-weight: bold; transition: color 0.3s;}
+    nav ul li a:hover {color: #00BFFF; text-shadow: 0 0 5px #00BFFF;}
+
+    /* Header */
+    header {text-align: center; background: linear-gradient(120deg, #111, #333); color: #fff; padding: 50px 20px;}
+    header h1 {color: #00BFFF; text-shadow: 0 0 15px #00BFFF;}
+    header h2 {font-size: 1.2em; margin-top: 10px; color: #ddd;}
+
+    /* Container */
+    .container {width: 80%; margin: 20px auto; background: #111; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 191, 255, 0.1); animation: fadeIn 1s ease-in;}
+    section {margin-bottom: 40px;}
+
+    /* Neon Effect for Section Headings */
+    h2 {color: #00BFFF; border-left: 5px solid #00BFFF; padding-left: 10px; margin-bottom: 10px; text-shadow: 0 0 10px #00BFFF;}
+    
+    ul {list-style: none; padding: 0;}
+    ul li {padding: 5px 0; color: #ddd;}
+
+    /* Skills Section */
+    .skills-details {background: #222; border: 1px solid #333; border-radius: 5px; padding: 10px; margin-top: 10px; box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);}
+    .skills-details p {margin: 5px 0; color: #ccc;}
+
+    /* Projects */
+    .projects {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;}
+    .card {background: #222; padding: 15px; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 191, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s;}
+    .card:hover {transform: translateY(-5px); box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);}
+    .card h3 {color: #00BFFF; text-shadow: 0 0 8px #00BFFF;}
+    .card p, .card ul li {color: #ccc;}
+    .card ul {padding-left: 20px; list-style: disc;}
+
+    /* Internship Description */
+    .internship-desc {font-size: 0.95em; color: #ccc; background: #222; border-left: 3px solid #00BFFF; padding: 10px 15px; border-radius: 5px; margin: 5px 0 15px 0; box-shadow: 0 0 10px rgba(0, 191, 255, 0.1);}
+
+    /* Footer */
+    footer {text-align: center; background: #111; color: #bbb; padding: 15px; margin-top: 30px;}
+
+    @keyframes fadeIn {from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Dharani D</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <h2>IT Graduate | Web Developer | AI Enthusiast</h2>
+  </header>
+
+  <div class="container" id="about">
+    <section>
+      <h2>About Me</h2>
+      <p>Enthusiastic and detail-oriented IT graduate passionate about front-end and back-end web development. Seeking opportunities to contribute to innovative solutions while continuously learning and growing in a dynamic environment.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech - Information Technology</strong>, KSR Institute for Engineering and Technology, Tiruchengode (2023 - 2027) - CGPA: 8.26 (Till 2nd Semester)</li>
+        <li><strong>Higher Secondary</strong>, Bharathi Matriculation Higher Secondary School, Saralai (2022 - 2023) - Percentage: 84%</li>
+        <li><strong>Secondary School</strong>, Bharathi Matriculation Higher Secondary School, Saralai (2020 - 2021) - Result: All Pass</li>
+      </ul>
+    </section>
+
+    <!-- ✅ Only Technical Skills -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-details">
+        <p><strong>Programming Languages:</strong> Intermediate in Java, Basic knowledge of Python</p>
+        <p><strong>Web Technologies:</strong> Exposure to AI-Powered Web Development tools and frameworks</p>
+        <p><strong>Software Tools:</strong> Proficient in Microsoft Excel for data handling, analysis, and reporting</p>
+        <p><strong>Other Skills:</strong> Problem-solving, logical thinking, and adaptability to new technologies</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Internship Project: Trusted UC Website Development using Lovable AI</h3>
+          <p><strong>Description:</strong> As part of my 15-day internship at AZHIZEN Solutions in the domain of AI-Powered Web Development, I developed a Trusted UC Website utilizing Lovable AI. The project focused on building a secure, user-friendly platform enhanced with AI-powered features to improve user experience and trust.</p>
+          <p><strong>Key Contributions:</strong></p>
+          <ul>
+            <li>Designed and developed the website structure using AI-assisted web development tools.</li>
+            <li>Integrated intelligent features provided by Lovable AI to automate content generation and enhance site functionality.</li>
+            <li>Implemented secure and responsive UI/UX elements to ensure usability across devices.</li>
+            <li>Tested and deployed the project with best practices in AI-driven web solutions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internships -->
+    <section id="internships">
+      <h2>Internships</h2>
+      <ul>
+        <li><strong>Web Developer</strong> - ETS Academy, Erode (15 Days)</li>
+      </ul>
+      <p class="internship-desc">I completed a 15-day internship at ETS Academy in the domain of Java programming. During this period, I gained valuable hands-on experience in core Java concepts, object-oriented programming, and practical application development. The sessions were well-structured, combining both theoretical knowledge and real-time coding exercises, which helped me strengthen my problem-solving and coding skills.</p>
+
+      <ul>
+        <li><strong>AI Powered Web Development Intern</strong> - AZHIZEN SOLUTIONS (15 Days)</li>
+      </ul>
+      <p class="internship-desc">I completed a 15-day internship at AZHIZEN Solutions in the domain of AI-Powered Web Development. Throughout the internship, I gained valuable insights into integrating artificial intelligence with modern web technologies. The program covered various aspects of web development along with the implementation of AI tools and frameworks to enhance user experience and functionality.</p>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Social Media Member at GFG KSRIET (2024-25)</li>
+        <li>Cyber Security Member at GDG KSRIET (2024-25)</li>
+        <li>Achieved District Level in JCI Competition</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>📞 7200996829</p>
+      <p>✉️ dharani2kguy@gmail.com</p>
+      <p>📍 Vijayamangalam, 638056</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Dharani D | Portfolio</p>
+  </footer>
+
+</body>
+</html>
